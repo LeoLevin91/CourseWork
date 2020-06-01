@@ -19,7 +19,8 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
         MainWindow.resize(725, 602)
-        MainWindow.setStyleSheet("background-color: #181818")
+        MainWindow.setStyleSheet("background-color: #181818; color: #fff")
+        #QMessageBox.setStyleSheet("color: #fff")
 
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -43,54 +44,54 @@ class Ui_MainWindow(object):
         self.spinBoxContainer.setObjectName("spinBoxContainer")
 
         self.doubleSpinBox_2 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_2.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_2.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_2.setText(str(8.0))
         #self.doubleSpinBox_2.setProperty("value", 8)
         self.doubleSpinBox_2.setObjectName("doubleSpinBox_2")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_2)
 
         self.doubleSpinBox_1 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_1.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_1.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_1.setText(str(0.01))
         #self.doubleSpinBox_1.setProperty("value", 0.01)
         self.doubleSpinBox_1.setObjectName("doubleSpinBox_1")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_1)
 
         self.doubleSpinBox_3 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_3.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_3.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_3.setText(str(30.0))
         #self.doubleSpinBox_3.setProperty("value", 30.0)
         self.doubleSpinBox_3.setObjectName("doubleSpinBox_3")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_3)
 
         self.doubleSpinBox_5 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_5.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_5.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_5.setText(str(0.003))
         #self.doubleSpinBox_5.setProperty("value", 0.003)
         self.doubleSpinBox_5.setObjectName("doubleSpinBox_5")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_5)
 
         self.doubleSpinBox_4 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_4.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_4.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_4.setText(str(0.00))
         self.doubleSpinBox_4.setObjectName("doubleSpinBox_4")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_4)
 
         self.doubleSpinBox_6 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_6.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_6.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_6.setText(str(0.11))
         self.doubleSpinBox_6.setObjectName("doubleSpinBox_6")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_6)
 
         self.doubleSpinBox_7 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_7.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_7.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_7.setText(str(1.65))
         #self.doubleSpinBox_7.setProperty("value", 1.65)
         self.doubleSpinBox_7.setObjectName("doubleSpinBox_7")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_7)
 
         self.doubleSpinBox_1_8 = QtWidgets.QLineEdit(self.verticalLayoutWidget)
-        self.doubleSpinBox_1_8.setStyleSheet("background-color: #fff;")
+        self.doubleSpinBox_1_8.setStyleSheet("background-color: #fff; color: #000")
         self.doubleSpinBox_1_8.setText(str(0.001))
         self.doubleSpinBox_1_8.setObjectName("doubleSpinBox_1_8")
         self.spinBoxContainer.addWidget(self.doubleSpinBox_1_8)
@@ -275,7 +276,7 @@ class Ui_MainWindow(object):
 
         if len(str) != 0:
             QMessageBox.about(MainWindow, "Ошибка", str)
-            #QMessageBox.setStyleSheet(self, "color: #fff;")
+            # QMessageBox.setStyleSheet("color: #fff")
         else:
             show_plot(100, c, k, l, S, alpha, u0, T)
 
