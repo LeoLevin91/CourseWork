@@ -274,11 +274,21 @@ class Ui_MainWindow(object):
             ax.grid()
             plt.show()
 
+        def find_n(l, k, eps):
+            N = 1
+            const = np.power(l, 2) / (k * np.power(np.pi, 3))
+            eval = const  # Оценка ряда при N=1
+            while (eval > eps):
+                N += 1
+                eval = const / np.power(N, 2)
+            return N
+
         if len(str) != 0:
             QMessageBox.about(MainWindow, "Ошибка", str)
             # QMessageBox.setStyleSheet("color: #fff")
         else:
-            show_plot(100, c, k, l, S, alpha, u0, T)
+            N = find_n(l, k, eps)
+            show_plot(N, c, k, l, S, alpha, u0, T)
 
 
 
